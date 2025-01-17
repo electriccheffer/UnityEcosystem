@@ -4,6 +4,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
 {
    
     private float xCoordinate = 0f; 
+    private float zCoordinate = 0.5f; 
+    private float yCoordinate = 0.3f; 
     private float incrementAmount = 0.001f; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,21 +18,22 @@ public class NewMonoBehaviourScript : MonoBehaviour
     void Update()
     {	
 
-	perlinStep(); 	
+	float newX = perlinStep(ref xCoordinate); 	
+	float newZ = perlinStep(ref zCoordinate); 
+	float newY = perlinStep(ref yCoordinate);
+	this.transform.position = new Vector3(newX,newY,newZ);
 	if(Input.GetKeyDown(KeyCode.Space))
 	{
 		takeStep();         
 	}
     }
 
-    private void perlinStep()
+    private float perlinStep(ref float coordinate)
     {
-	float perlinValue = Mathf.PerlinNoise(xCoordinate,0); 
-	xCoordinate += incrementAmount; 
-	float newX = Unity.Mathematics.math.remap(perlinValue,0f,1f,0f,10f);
-	this.transform.position = new Vector3(newX,transform.position.y,transform.position.z);
-	this.transform.position = new Vector3(newX,transform.position.y,transform.position.z);
-
+	float perlinValue = Mathf.PerlinNoise(coordinate,0); 
+	coordinate += incrementAmount; 
+	float newValue = Unity.Mathematics.math.remap(perlinValue,0f,1f,0f,10f);
+	return newValue; 
     }
 
     private void takeStep()
