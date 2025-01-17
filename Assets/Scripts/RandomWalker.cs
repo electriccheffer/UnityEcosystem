@@ -19,23 +19,22 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     private void takeStep()
     {
-	int outcome = Random.Range(0,4);
-	switch(outcome)
+	float outcome = Random.Range(0f,1f);
+	if(outcome < 0.1f)
 	{
-
-		case 0:
-			this.transform.position += new Vector3(0,0,1); 
-			break; 
-		case 1: 
-			this.transform.position += new Vector3(1,0,0);
-			break; 
-		case 2: 
-			this.transform.position += new Vector3(-1,0,0); 
-			break; 
-		case 3: 
-			this.transform.position += new Vector3(0,0-1);
-			break; 
-
+		this.transform.position += new Vector3(0,0,1); 
+	}
+	else if(outcome < 0.3f)
+	{
+		this.transform.position += new Vector3(1,0,0);
+	}
+	else if(outcome < 0.8f)
+	{
+		this.transform.position += new Vector3(-1,0,0); 
+	}
+	else
+	{
+		this.transform.position += new Vector3(0,0-1);
 	}
 
     }
