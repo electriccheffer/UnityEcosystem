@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 133
+  controlID: 141
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -446,10 +446,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 8.5}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 22fbffff
+      m_ExpandedIDs: ccf2ffff68f4ffff00f7ffff22fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -466,7 +466,7 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 2}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1549,9 +1549,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -8.135565, y: 3.5881004, z: 6.1288548}
+    m_Target: {x: -7.926599, y: 3.5508049, z: 0.30386853}
     speed: 2
-    m_Value: {x: -8.135565, y: 3.5881004, z: 6.1288548}
+    m_Value: {x: -7.926599, y: 3.5508049, z: 0.30386853}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1601,9 +1601,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.11652673, y: 0.85351133, z: -0.45943847, w: 0.21647783}
   m_Size:
-    m_Target: 36.475544
+    m_Target: 55.454746
     speed: 2
-    m_Value: 36.475544
+    m_Value: 55.454746
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -2322,14 +2322,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: /Users/ryanmccaffery/UnityEcosystem
+  m_LastProjectPath: /Users/ryanmccaffery/Desktop/UnityEcosystem
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aca70000
-    m_LastClickedID: 42924
-    m_ExpandedIDs: 00000000c0a50000c2a50000c4a50000c6a50000c8a50000caa50000cca50000
+    m_SelectedIDs: bca70000
+    m_LastClickedID: 42940
+    m_ExpandedIDs: 00000000cca50000cea50000d0a50000d2a50000d4a50000d6a50000d8a50000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2358,7 +2358,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c0a50000c2a50000c4a50000c6a50000c8a50000caa50000cca50000
+    m_ExpandedIDs: 00000000cca50000cea50000d0a50000d2a50000d4a50000d6a50000d8a50000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
