@@ -40,7 +40,8 @@ public class Mover : MonoBehaviour
 
 	}        
    	this.accelleration = new Vector3(0f,0f,0f); 
-        this.velocity = this.accelleration;
+        this.velocity += this.accelleration;
+    	this.transform.position += this.velocity;
     }
 
     void MoveInDirection(Vector3 direction){
